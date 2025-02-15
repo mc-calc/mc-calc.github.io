@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Minecraft Multi-Stage Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>Minecraft Multi-Stage Calculator</h1>
+</header>
+
+<main>
+  <div class="container">
+
+    <div id="timeCheckboxes">
+      <label><input type="checkbox" id="showPerMinute" checked>Minutely</label>
+      <label><input type="checkbox" id="showPerHour" checked>Hourly</label>
+      <label><input type="checkbox" id="showPerDay" checked>Daily</label>
+      <label><input type="checkbox" id="showPerWeek">Weekly</label>
+      <label><input type="checkbox" id="showPerMonth">Monthly</label>
+    </div>
+
+    <div id="stagesContainer">
+      <!-- Each stage will appear here (config on left, results on right) -->
+    </div>
+
+    <button id="addStageBtn">+ Add Stage</button>
+    <button id="resetBtn">Reset Pipeline</button>
+
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 DMetcalfe. All rights reserved.</p>
+</footer>
+
+<script src="scripts/data.js"></script>
+<script src="scripts/pipeline-logic.js"></script>
+<script src="scripts/pipeline-calc.js"></script>
+<script src="scripts/pipeline-render.js"></script>
+<script src="scripts/main.js"></script>
+
+</body>
+</html>

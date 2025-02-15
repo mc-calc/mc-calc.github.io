@@ -1,0 +1,238 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e1e;
+  color: #d0d0d0;
+  font-family: 'Press Start 2P', monospace, sans-serif;
+  font-size: 14px;
+}
+
+header, footer {
+  background-color: #3b3b3b;
+  color: #cfcfcf;
+  text-align: center;
+  padding: 0.75rem;
+  border: 2px solid #555;
+  border-left: none;
+  border-right: none;
+}
+
+footer p {
+  margin: 0;
+  padding: 0.25rem;
+  font-size: 0.75rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 1rem auto;
+  padding: 1rem;
+  background: #2a2a2a;
+  border: 2px solid #444;
+}
+
+.container {
+  width: fit-content;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+  margin: 1rem auto;
+  padding: 1rem;
+  background: #2a2a2a;
+  border: 2px solid #444;
+  box-sizing: border-box;
+}
+
+
+input[type="text"],
+input[type="number"],
+select {
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #555;
+  padding: 0.25rem;
+  font-size: 14px;
+  outline: none;
+}
+input[type="text"]::placeholder,
+input[type="number"]::placeholder {
+  color: #aaa;
+}
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+  border-color: #888;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: #777;
+}
+
+#timeCheckboxes {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.5rem 1rem;
+}
+
+#timeCheckboxes label {
+  cursor: pointer;
+}
+
+#stagesContainer {
+  margin-bottom: 1rem;
+  border: 2px solid #444;
+  padding: 1rem;
+  background: #3b3b3b;
+}
+
+.stage-block {
+  border: 2px solid #555;
+  margin-bottom: 1rem;
+  background: #2e2e2e;
+  position: relative;
+}
+.stage-block h3 {
+  position: relative;
+  margin: 0;
+  padding: 0.5rem;
+  line-height: 1.2;
+  background: #444;
+  border-bottom: 2px solid #555;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.remove-btn {
+  position: absolute;
+  top: 0.3rem;
+  right: 0.5rem;
+  background: #b33939;
+  border: 2px solid #910000;
+  color: #fff;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.remove-btn:hover {
+  background-color: #910000;
+}
+
+.stage-content {
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
+  padding: 0rem 0;
+  flex-wrap: nowrap;
+  align-items: stretch;
+}
+
+.stage-config-container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex: 1;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1rem 0;
+}
+
+.stage-config-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+
+.label-input-row {
+  display: grid;
+  grid-template-columns: 170px auto;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.label-col {
+  text-align: right;
+  font-weight: bold;
+}
+
+.stage-config-middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: flex-start;
+  gap: 0.5rem;
+  flex: 1;
+  padding-right: 1rem;
+}
+
+.stage-config-middle .stage-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mode-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.stage-results {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px solid #555;
+  padding: 1rem 0;
+  flex-shrink: 0;
+}
+
+.results-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0;
+}
+
+.results-table th,
+.results-table td {
+  border: 2px solid #555;
+  padding: 0.5rem;
+  text-align: right;
+  font-family: 'Press Start 2P', monospace, sans-serif;
+  white-space: nowrap;
+}
+
+.results-table th {
+  background: #444;
+  text-align: left;
+}
+
+button#addStageBtn,
+button#resetBtn {
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  border: 2px solid #555;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+button#addStageBtn {
+  background-color: #4e9a06;
+  color: #fff;
+}
+button#addStageBtn:hover {
+  background-color: #3a7b05;
+}
+button#resetBtn {
+  background-color: #cc7a00;
+  color: #fff;
+}
+button#resetBtn:hover {
+  background-color: #9f5d00;
+}
